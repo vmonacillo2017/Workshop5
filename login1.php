@@ -55,4 +55,8 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
 <input type="submit" name="cancel" value="Cancel" />
 <a href="<?php echo($_SERVER['PHP_SELF']);?>">Refresh</a></p>
 </form>
-
+<p>
+			For a password hint, view source and find a password hint
+			in the HTML comments.
+			<!-- Hint: Username: vinz@gmail.com The password is 123456. -->
+			</p>
