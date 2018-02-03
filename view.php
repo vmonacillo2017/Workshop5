@@ -7,6 +7,12 @@ if(isset($_GET['logout'])){
 	
 	header('location:index.php');
 }
+<?php
+if(!isset($_GET['name'])){
+	die("Not logged in");
+}else{
+	$name = $_GET['name'];
+}
 ?>
 <!DOCTYPE html>
 <html>
