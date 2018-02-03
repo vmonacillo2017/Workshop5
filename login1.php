@@ -35,7 +35,8 @@ if ( isset($_POST['email']) && isset($_POST['password'])  ) {
        echo "<h1>Login incorrect.</h1>\n";
     } else {
        echo "<p>Login success.</p>\n";
-       header("Location: autos.php? name =" .urlencode($_POST['name']));
+       //header("Location: autos.php? name =" .urlencode($_POST['name']));
+	header('Location: add.php?name='.$_SESSION["username"]);    
        return;
     }
 }
