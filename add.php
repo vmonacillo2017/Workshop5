@@ -25,7 +25,7 @@ if (isset($_POST['add'])){
         ':mi' => $mileage)
 		);
 		//$err="Record Inserted";
-		echo '<i style="color:green;font-size:30px;">Record inserted successfully!</i>';
+		echo '<i style="color:green;font-size:16px;">Record inserted successfully!</i>';
 		header("Location: view.php");
 	}
 }
