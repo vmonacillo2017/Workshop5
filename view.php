@@ -4,15 +4,13 @@ session_start();
 if(isset($_GET['logout'])){
 	session_start();
 	session_destroy();
+	if(!isset($_GET['name'])){
+		die("Not logged in");
+	}else{
+		$name = $_GET['name'];
+	}
 	
 	header('location:index.php');
-}
-<?php
-if(!isset($_GET['name'])){
-	die("Not logged in");
-}else{
-	$name = $_GET['name'];
-}
 ?>
 <!DOCTYPE html>
 <html>
