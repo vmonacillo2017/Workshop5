@@ -26,7 +26,7 @@ if (isset($_POST['add'])){
 		);
 		//$err="Record Inserted";
 		echo '<i style="color:green;font-size:30px;">Record inserted successfully!</i>';
-		//header("Location: view.php");
+		header("Location: view.php");
 	}
 }
 
