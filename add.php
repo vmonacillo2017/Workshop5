@@ -24,9 +24,9 @@ if (isset($_POST['add'])){
         ':yr' => $year,
         ':mi' => $mileage)
 		);
-		$err="Record Inserted";
-		
-		header("Location: view.php");
+		//$err="Record Inserted";
+		echo '<i style="color:green;font-size:30px;">Record inserted successfully!</i>';
+		//header("Location: view.php");
 	}
 }
 
