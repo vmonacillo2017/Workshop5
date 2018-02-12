@@ -1,4 +1,6 @@
 <?php
+require_once "pdo.php";
+
 if(!isset($_GET['name'])){
 	die("Not logged in");
 }else{
@@ -6,8 +8,8 @@ if(!isset($_GET['name'])){
 }
 
 $err="";
-$pdo = new PDO('mysql:host=sql12.freesqldatabase.com;port=3306;dbname=sql12219242','sql12219242', 'CP4yM58Nti');
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//$pdo = new PDO('mysql:host=sql12.freesqldatabase.com;port=3306;dbname=sql12219242','sql12219242', 'CP4yM58Nti');
+//$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 if (isset($_POST['add'])){
 	$make=htmlentities($_POST['make']);
 	$year=htmlentities($_POST['year']);
